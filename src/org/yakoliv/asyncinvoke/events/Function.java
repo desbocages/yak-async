@@ -2,7 +2,7 @@ package org.yakoliv.asyncinvoke.events;
 
 /**
  *
- * @author YAKAM Olivier (olivier.yakam@yahoo.fr)
+ * @author desbocages
  */
 public class Function {
 
@@ -11,7 +11,7 @@ public class Function {
      *
      * @param <ToReturn> the parameterized type of data that will be returned by
      * the procedure.
-     * @see Executor
+     * @see org.yakoliv.asyncinvoke.tasks.Executor
      */
     public interface Callable<ToReturn> {
 

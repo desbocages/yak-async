@@ -8,7 +8,7 @@ package org.yakoliv.asyncinvoke.events;
 /**
  * This interface will be implemented by callback classes.
  *
- * @author YAKAM Olivier (olivier.yakam@yahoo.fr)
+ * @author desbocages
  */
 public interface Callback<T> {
 
@@ -22,7 +22,7 @@ public interface Callback<T> {
      * will provide the business logic. This method is called by the executor
      * object in the <code> AsyncProcessor </code> children.
      *
-     * @see AsyncProcessor
+     * @see org.yakoliv.asyncinvoke.tasks.AsyncProcessor
      * @param result the result issued by the background process.
      */
     public void handleResult(T result);
@@ -33,7 +33,7 @@ public interface Callback<T> {
      * implement it. It is iplemented in the 
      *  <code> AbstractCallbackAdapter </code> class.
      *
-     * @see AbstractCallbackAdapter
+     * @see org.yakoliv.asyncinvoke.pojo.AbstractCallbackAdapter
      * @return the raised exception.
      */
     public Throwable getException();
@@ -44,7 +44,7 @@ public interface Callback<T> {
      * method. There is no need for the developer to implement it. It is
      * iplemented in the <code> AbstractCallbackAdapter </code> class.
      *
-     * @see AbstractCallbackAdapter
+     * @see org.yakoliv.asyncinvoke.pojo.AbstractCallbackAdapter
      * @param ex the exception to set.
      */
     public void setException(Throwable ex);

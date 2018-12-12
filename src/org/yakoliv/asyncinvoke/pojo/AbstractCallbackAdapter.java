@@ -11,7 +11,7 @@ import org.yakoliv.asyncinvoke.events.Callback;
  * This is a small abstract class that implements the <code>Callback</code>
  * interface to reduce developer's work. The only method that he should write
  * is the <code>doInBackground()</code> method missing in this class.
- * @author YAKAM Olivier (olivier.yakam@yahoo.fr)
+ * @author desbocages
  * @param <T> the type of the result that will be returned by the background
  * task.
  */

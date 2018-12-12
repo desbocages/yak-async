@@ -17,7 +17,7 @@ import org.yakoliv.asyncinvoke.pojo.OperationResult;
  * This class is the main class of this library. It is the heart of all 
  * processes. It is the one that makes the asynchronous task possible, creating
  * and providing the background worker to the application.
- * @author YAKAM Olivier (olivier.yakam@yahoo.fr)
+ * @author desbocages
  */
 public class Executor implements IExecutor {
 
@@ -70,7 +70,6 @@ public class Executor implements IExecutor {
                         }
                     }
                 } catch (InterruptedException ex) {
-//                    ex.printStackTrace();
                     Logger.getLogger(Executor.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (ExecutionException ex) {
                     Logger.getLogger(Executor.class.getName()).log(Level.SEVERE, null, ex);

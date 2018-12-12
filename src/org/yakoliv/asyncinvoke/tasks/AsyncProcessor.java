@@ -15,18 +15,9 @@ import org.yakoliv.asyncinvoke.pojo.OperationResult;
  * This is one of the main classes the developers need to extend to provide the
  * business logic of the background task.
  *
- * @author YAKAM Olivier (olivier.yakam@yahoo.fr)
+ * @author desbocages
  * @param <V> type of the ouput of the process to execute in background
- * @param <T> type of the input of the process to execute in background e.g.
- *
- * <code>
- * public class MessageProcessor extends AsyncProcessor<String, Message> {
- *
- * @Override protected String doInBackground(Message msg) { return process(msg);
- * } private String process(Message m){ return "done."; } }
- * MessageProcessor<String, Message> processor = new MessageProcessor<>();
- * processor.doWork(new Message());
- * </code>
+ * @param <T> type of the input of the process to execute in background
  */
 public abstract class AsyncProcessor<V, T> {
 
@@ -82,9 +73,6 @@ public abstract class AsyncProcessor<V, T> {
                 callback.setInvokedMethodName(c0.getSimpleName()+" "+this.getClass().getSimpleName()
                         + ".doInBackground("
                         + (c1.getSimpleName()) + " param);");
-//                System.out.println(this.getClass().getSimpleName()
-//                        + ".doInBackground("
-//                        + (c1.getSimpleName()) + " param);");
             }
 
         } catch (Exception e) {

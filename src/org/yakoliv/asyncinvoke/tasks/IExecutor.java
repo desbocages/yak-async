@@ -12,7 +12,7 @@ import org.yakoliv.asyncinvoke.pojo.OperationResult;
 
 /**
  *
- * @author YAKAM Olivier (olivier.yakam@yahoo.fr)
+ * @author desbocages
  */
 public interface IExecutor {
 public <T> SwingWorker<OperationResult<T>,Void> executeAsync(final Function.Callable callable);

@@ -5,7 +5,7 @@ package org.yakoliv.asyncinvoke.pojo;
 /**
  * A class to encapsulate data around the background task execution.
  * It is only used by the library for inner purposes.
- * @author YAKAM Olivier (olivier.yakam@yahoo.fr)
+ * @author desbocages
  */
 public class OperationResult<T> {
  private Throwable thrownException;
