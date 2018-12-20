@@ -24,10 +24,13 @@ Let's write a callback that will just print the name of the method that is going
 
 
 
+
+```
+
+
 import org.yakoliv.asyncinvoke.pojo.AbstractCallbackAdapter;
 
 public class AsyncMessageProcCallBack extends AbstractCallbackAdapter<String>{
-
 
     @Override
     public void doBefore() {
@@ -44,12 +47,15 @@ public class AsyncMessageProcCallBack extends AbstractCallbackAdapter<String>{
         result = t;
         System.out.println("Operation ended with result: " + t);
     }
-    
 }
 
 
+```
+
 Let's now write the background processor class. Message is supposed to be a POJO.
 
+
+```
 
 import org.yakoliv.asyncinvoke.tasks.AsyncProcessor;
 
@@ -68,8 +74,13 @@ public class MessageProcessor extends AsyncProcessor<String, Message> {
   
 }
 
+
+```
+
 The job is finished. Let's now add the asynchronous process to our app.
   
+  
+  ```
   public static void main(String[] t){
   
   
@@ -93,7 +104,11 @@ The job is finished. Let's now add the asynchronous process to our app.
   
   }
   
+  ```
+  
   The output will be something like:
+  
+  ```
   
   The method to exec: String MessageProcessor.doInBackground(Message param);
   
@@ -101,4 +116,4 @@ The job is finished. Let's now add the asynchronous process to our app.
   
   Operation ended with result: done.
   
-
+```
