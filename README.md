@@ -25,7 +25,7 @@ Let's write a callback that will just print the name of the method that is going
 
 
 
-```
+```java
 
 
 import org.yakoliv.asyncinvoke.pojo.AbstractCallbackAdapter;
@@ -55,7 +55,7 @@ public class AsyncMessageProcCallBack extends AbstractCallbackAdapter<String>{
 Let's now write the background processor class. Message is supposed to be a POJO.
 
 
-```
+```java
 
 import org.yakoliv.asyncinvoke.tasks.AsyncProcessor;
 
@@ -80,7 +80,7 @@ public class MessageProcessor extends AsyncProcessor<String, Message> {
 The job is finished. Let's now add the asynchronous process to our app.
   
   
-  ```
+  ```java
   public static void main(String[] t){
   
   
